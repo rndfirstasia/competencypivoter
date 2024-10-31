@@ -35,7 +35,7 @@ if uploaded_file:
     })
 
     st.write("Hasil Pivot:")
-    st.dataframe(df_expanded)
+    st.dataframe(df_expanded, hide_index=True)
     
 else:
     st.info("Masukkan file excel untuk memproses.")
